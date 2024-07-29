@@ -1,0 +1,90 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./assets/fonts/LibreBaskerville-Regular.ttf);
+}
+
+
+*{
+  margin: 0px 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav p{
+  font-family: 'myFirstFont', serif;
+  letter-spacing: 6px;
+  font-size: 14px;
+  color : #7b7b71;
+  padding: 15px;
+}
+
+nav p:hover{
+  color: black;
+  cursor: pointer;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 42px;
+}
+
+hr{
+  opacity: .1;
+  width: 96%;
+  margin-left: 40px;
+}
+.card-list{
+  column-count: 4;
+  padding: 20px;
+}
+
+.card{
+  break-inside: avoid;
+  margin-bottom: -40px;
+  
+}
+
+.card h2 , .card p{
+padding: 5px;
+  position: relative;
+  bottom: 118px;
+  color: white;
+  left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 202px;
+}
+.card p{
+  color: #c4c4c4;
+  font-family: myFirstFont;
+  font-size: 15px;
+}
+.card img{
+  width: 100%;
+}
+
+
+@media (max-width: 930px){
+.card-list {
+  column-count: 3;
+}
+
+}
+@media (max-width: 840px){
+.card-list {
+  column-count: 2;
+}
+}
+@media (max-width: 590px){
+.card-list {
+  column-count: 1;
+}
+}
+
+.card img:hover{
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
